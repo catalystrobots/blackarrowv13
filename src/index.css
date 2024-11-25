@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased;
+  }
+}
+
+@layer utilities {
+  .diagonal-split {
+    clip-path: polygon(0 0, 100% 0, 60% 100%, 0% 100%);
+  }
+}

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Distressed Texture Filter -->
+  <filter id="distressed">
+    <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="5" seed="2" />
+    <feDisplacementMap in="SourceGraphic" scale="2" />
+  </filter>
+
+  <!-- Main Circle -->
+  <g filter="url(#distressed)">
+    <path d="M400 100 
+             A200 200 0 0 1 600 300
+             A200 200 0 0 1 400 500
+             A200 200 0 0 1 200 300
+             A200 200 0 0 1 400 100Z" 
+          stroke="black" 
+          stroke-width="20"
+          fill="none" />
+
+    <!-- Arrow Through Text -->
+    <path d="M150 300 H650" 
+          stroke="black" 
+          stroke-width="8" />
+    
+    <!-- Arrow Head -->
+    <path d="M620 300 L650 280 L680 300 L650 320 Z" 
+          fill="black" />
+    
+    <!-- CNC Machine Icon -->
+    <g transform="translate(350,220) scale(0.8)">
+      <path d="M50 0 H100 V30 H80 V60 H20 V30 H0 V0 H50" 
+            fill="black" />
+      <path d="M35 60 V90 H65 V60" 
+            fill="black" />
+      <path d="M45 90 L50 120 L55 90" 
+            fill="black" />
+    </g>
+
+    <!-- Text -->
+    <text x="400" y="350" 
+          font-family="serif" 
+          font-size="48" 
+          font-weight="bold"
+          text-anchor="middle"
+          fill="black">
+      BLACK ARROW
+    </text>
+    <text x="400" y="420" 
+          font-family="serif" 
+          font-size="48" 
+          font-weight="bold"
+          text-anchor="middle"
+          fill="black">
+      FORGE
+    </text>
+  </g>
+</svg>
